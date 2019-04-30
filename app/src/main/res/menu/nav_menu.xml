@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/morphExampleFragment"
+        android:title="Morph"
+        android:icon="@drawable/ic_layers"/>
+    <item
+        android:id="@+id/speed_dial_emit"
+        android:title="Speed dial: emit"
+        android:icon="@drawable/ic_layers"/>
+    <item
+        android:id="@+id/speed_dial_transform"
+        android:title="Speed dial: transform"
+        android:icon="@drawable/ic_layers"/>
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            app:title="Morph"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.circularreveal.CircularRevealFrameLayout
+        android:id="@+id/sheet"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:visibility="invisible"
+        android:background="@color/secondaryColor"
+        android:padding="32dp"
+        app:layout_behavior="com.google.android.material.transformation.FabTransformationSheetBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sheet"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
+            android:textColor="@color/primaryTextColor"
+            />
+
+    </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        app:fabSize="auto"
+        app:srcCompat="@drawable/ic_add"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
