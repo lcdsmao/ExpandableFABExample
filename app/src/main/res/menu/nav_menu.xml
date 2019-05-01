@@ -10,7 +10,7 @@
         android:title="Speed dial: emit"
         android:icon="@drawable/ic_layers"/>
     <item
-        android:id="@+id/speed_dial_transform"
+        android:id="@+id/transformExampleFragment"
         android:title="Speed dial: transform"
         android:icon="@drawable/ic_layers"/>
 </menu>

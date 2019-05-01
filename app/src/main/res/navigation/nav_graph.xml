@@ -13,4 +13,8 @@
         android:id="@+id/emitExampleFragment"
         android:name="com.paranoid.mao.expandablewidgetexample.EmitExampleFragment"
         android:label="EmitExampleFragment" />
+    <fragment
+        android:id="@+id/transformExampleFragment"
+        android:name="com.paranoid.mao.expandablewidgetexample.TransformExampleFragment"
+        android:label="TransformExampleFragment" />
 </navigation>
