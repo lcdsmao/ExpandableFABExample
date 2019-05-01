@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/clear"
+        android:state_activated="true"
+        android:drawable="@drawable/ic_clear">
+    </item>
+    <item
+        android:id="@+id/share"
+        android:drawable="@drawable/ic_share">
+    </item>
+
+    <transition
+        android:drawable="@drawable/avd_share_to_clear"
+        android:fromId="@id/share"
+        android:toId="@id/clear">
+    </transition>
+
+    <transition
+        android:drawable="@drawable/avd_clear_to_share"
+        android:fromId="@id/clear"
+        android:toId="@id/share"/>
+
+</animated-selector>

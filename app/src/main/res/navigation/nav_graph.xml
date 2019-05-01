@@ -9,4 +9,8 @@
         android:id="@+id/morphExampleFragment"
         android:name="com.paranoid.mao.expandablewidgetexample.MorphExampleFragment"
         android:label="MorphExampleFragment" />
+    <fragment
+        android:id="@+id/emitExampleFragment"
+        android:name="com.paranoid.mao.expandablewidgetexample.EmitExampleFragment"
+        android:label="EmitExampleFragment" />
 </navigation>

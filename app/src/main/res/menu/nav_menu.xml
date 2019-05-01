@@ -6,7 +6,7 @@
         android:title="Morph"
         android:icon="@drawable/ic_layers"/>
     <item
-        android:id="@+id/speed_dial_emit"
+        android:id="@+id/emitExampleFragment"
         android:title="Speed dial: emit"
         android:icon="@drawable/ic_layers"/>
     <item

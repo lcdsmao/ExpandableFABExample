@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+
+    <group
+        android:name="share"
+        android:pivotX="12.0"
+        android:pivotY="12.0">
+
+        <path
+            android:name="share_path"
+            android:fillColor="#FF000000"
+            android:pathData="@string/path_share"/>
+    </group>
+
+    <group
+        android:name="clear"
+        android:pivotX="12.0"
+        android:pivotY="12.0">
+        <path
+            android:name="clear_path"
+            android:fillColor="#FF000000"
+            android:pathData="@string/path_clear"/>
+    </group>
+
+</vector>
