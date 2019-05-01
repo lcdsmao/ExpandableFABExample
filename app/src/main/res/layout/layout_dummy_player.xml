@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_morph_example">
+
+    <ImageView
+        android:id="@+id/rewind"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_fast_rewind"
+        android:tint="@color/white"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pause"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        />
+
+    <ImageView
+        android:id="@+id/pause"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_pause"
+        android:tint="@color/white"
+        app:layout_constraintStart_toEndOf="@id/rewind"
+        app:layout_constraintEnd_toStartOf="@id/forward"
+        app:layout_constraintTop_toTopOf="@id/rewind"
+        />
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_fast_forward"
+        android:tint="@color/white"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintStart_toEndOf="@id/pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pause" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:progress="30"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:progressTint="@color/white"
+        android:thumbTint="@color/white"
+        android:progressBackgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rewind" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:layout_marginTop="48dp"
+        android:padding="24dp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@id/seekbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,20 +22,13 @@
     <com.google.android.material.circularreveal.CircularRevealFrameLayout
         android:id="@+id/sheet"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:visibility="invisible"
         android:background="@color/secondaryColor"
-        android:padding="32dp"
         app:layout_behavior="com.google.android.material.transformation.FabTransformationSheetBehavior">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sheet"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
-            android:textColor="@color/primaryTextColor"
-            />
+        <include layout="@layout/layout_dummy_player" />
 
     </com.google.android.material.circularreveal.CircularRevealFrameLayout>
 
@@ -47,7 +40,7 @@
         android:layout_gravity="bottom|end"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
         app:fabSize="auto"
-        app:srcCompat="@drawable/ic_add"
+        app:srcCompat="@drawable/ic_play"
         />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
